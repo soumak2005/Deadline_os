@@ -57,7 +57,7 @@ const MainLayout = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-abyss text-slate-900 flex flex-col cyber-grid relative">
+    <div className="min-h-screen bg-abyss text-slate-100 flex flex-col cyber-grid relative">
       <Navbar
         onOpenAddTask={() => setIsAddTaskOpen(true)}
         onOpenSettings={() => setIsSettingsOpen(true)}

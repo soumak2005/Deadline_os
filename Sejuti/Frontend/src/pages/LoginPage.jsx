@@ -45,11 +45,11 @@ export const LoginPage = () => {
       <div className="absolute -top-40 -left-40 w-96 h-96 rounded-full bg-sos-crimson/15 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-sos-cyan/15 blur-3xl pointer-events-none" />
 
-      <div className="relative w-full max-w-md bg-white border border-slate-200 rounded-3xl p-8 shadow-xl backdrop-blur-xl z-10">
+      <div className="relative w-full max-w-md bg-surface/80 border border-surface-border-bright rounded-3xl p-8 shadow-2xl backdrop-blur-xl z-10">
         
         {/* Logo */}
         <div className="flex flex-col items-center text-center mb-8">
-          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sos-crimson/20 to-sos-violet/20 border border-sos-crimson/50 flex items-center justify-center text-sos-crimson shadow-sm mb-3">
+          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-sos-crimson/20 to-sos-violet/20 border border-sos-crimson/50 flex items-center justify-center text-sos-crimson shadow-glow-crimson mb-3">
             <Flame className="w-8 h-8 animate-pulse" />
           </div>
           <h1 className="text-2xl font-black font-mono tracking-wider text-white">
@@ -66,7 +66,7 @@ export const LoginPage = () => {
             type="button"
             onClick={handleDemoLogin}
             disabled={isLoading}
-            className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-mono font-bold uppercase tracking-wider shadow-sm hover:opacity-95 transition-all active:scale-98 cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-sos-crimson via-rose-600 to-sos-violet text-white text-xs font-mono font-bold uppercase tracking-wider shadow-glow-crimson hover:opacity-95 transition-all active:scale-98 cursor-pointer"
           >
             <Zap className="w-4 h-4 text-amber-300" />
             <span>1-Click Demo Access (Alex Vance)</span>
@@ -125,7 +125,7 @@ export const LoginPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-900 text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer"
+            className="w-full mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-surface hover:bg-surface-hover border border-surface-border-bright text-white text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer"
           >
             <span>{isLoading ? 'Authenticating...' : 'Sign In'}</span>
             <ArrowRight className="w-4 h-4 text-sos-cyan" />

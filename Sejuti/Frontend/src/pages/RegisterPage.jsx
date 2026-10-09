@@ -34,10 +34,10 @@ export const RegisterPage = () => {
       <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-sos-violet/15 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-sos-crimson/15 blur-3xl pointer-events-none" />
 
-      <div className="relative w-full max-w-md bg-white border border-slate-200 rounded-3xl p-8 shadow-xl backdrop-blur-xl z-10">
+      <div className="relative w-full max-w-md bg-surface/80 border border-surface-border-bright rounded-3xl p-8 shadow-2xl backdrop-blur-xl z-10">
         
         <div className="flex flex-col items-center text-center mb-6">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-sos-cyan/20 to-sos-violet/20 border border-sos-cyan/50 flex items-center justify-center text-sos-cyan shadow-sm mb-2">
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-sos-cyan/20 to-sos-violet/20 border border-sos-cyan/50 flex items-center justify-center text-sos-cyan shadow-glow-cyan mb-2">
             <Flame className="w-7 h-7" />
           </div>
           <h1 className="text-xl font-black font-mono tracking-wider text-white">
@@ -142,7 +142,7 @@ export const RegisterPage = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full mt-3 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-sos-cyan to-sos-violet text-slate-950 font-bold text-xs font-mono uppercase tracking-wider shadow-sm hover:opacity-95 transition-all cursor-pointer"
+            className="w-full mt-3 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-sos-cyan to-sos-violet text-slate-950 font-bold text-xs font-mono uppercase tracking-wider shadow-glow-cyan hover:opacity-95 transition-all cursor-pointer"
           >
             <span>{isLoading ? 'Creating Profile...' : 'Complete Registration'}</span>
             <ArrowRight className="w-4 h-4" />
