@@ -1,12 +1,7 @@
-node_modules/
-**/node_modules/
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
-dist/
-build/
-coverage/
-.DS_Store
-*.log
-.vscode/
-.idea/
+
+# Dependencies
+node_modules/
